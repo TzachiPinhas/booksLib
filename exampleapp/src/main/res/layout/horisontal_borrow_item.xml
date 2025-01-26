@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="?android:attr/colorBackground"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- שם הספר -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/borrow_book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title: The Great Gatsby"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- סטטוס ההשאלה -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/borrow_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: pending"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- תאריך ההשאלה -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/borrow_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borrowed at: 2025-01-20"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
